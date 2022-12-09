@@ -280,8 +280,10 @@ Nav-Bar
     margin-top: -20px;
 }
 .navbar-logo img{
-    width: 150%;
+    width: 50%;
     margin-left: -50px;
+    margin-top: 5px;
+    margin-bottom: -10px;
 }
 .navbar.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -1368,7 +1370,7 @@ Reponsive
 .chatbox-toggle {
 	width: 100%;
 	height: 100%;
-	background: var(--blue);
+	background: var(--main-color);
 	color: var(--white);
 	font-size: 2rem;
 	display: flex;
@@ -1482,7 +1484,7 @@ Reponsive
 }
 .chatbox-message-item.sent {
 	align-self: flex-end;
-	background: var(--blue);
+	background: var(--main-color);
 	color: var(--white);
 	border-radius: .75rem 0 .75rem .75rem;
 }
@@ -1519,8 +1521,10 @@ Reponsive
 	display: none;
 }
 .chatbox-message-submit {
+    margin-left: 150px;
+    
 	font-size: 1.25rem;
-	color: var(--blue);
+	color: var(--main-color);
 	background: transparent;
 	border: none;
 	outline: none;
