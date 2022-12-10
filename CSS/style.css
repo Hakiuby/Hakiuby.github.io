@@ -6,6 +6,7 @@ Font
 Global CSS
 ------------------- */
 :root{
+    --gray :var(--black-400); 
     --esm-main-color:#FF5C00;
     --main-color: #FF5C00; 
     --color-1: #e91e63; 
@@ -217,6 +218,10 @@ ul{
 .section-title h2 span{
     color: var(--esm-main-color);
 }
+.section-title h3 span {
+    font-size: 40px;
+    color: var(--esm-main-color);
+}
 .owl-carousel .owl-dots{
     padding: 0 15px;
     text-align: center;
@@ -280,7 +285,7 @@ Nav-Bar
     margin-top: -20px;
 }
 .navbar-logo img{
-    width: 50%;
+    width: 45%;
     margin-left: -50px;
     margin-top: 5px;
     margin-bottom: -10px;
@@ -341,13 +346,14 @@ Nav-Bar
     right: 0;
     bottom: 0;
     height: 1px;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     transition: all 0.5s ease;
     transform: scale(0);
 }
 .navbar .nav-item .nav-link.active__home::before,
 .navbar .nav-item .nav-link:hover:before{
     transform: scale(1);
+   
 }
 
 /* -------------------- 
@@ -361,8 +367,34 @@ Home Section
     border-radius: 0 0 200px 0;
     position: relative;
     z-index: 1;
-
+    animation: slideBg 20s linear infinite;
 }
+/* Slide carosel */
+@keyframes slideBg{
+    0%{
+        background-image: url('../img/download-app-bg.jpg');
+        
+    }
+    25%{
+        background-image: url('../img/chartforex.jpg');
+        
+    }
+    50%{
+        background-image: url('../img/asianhuman.jpg');
+        
+    }
+    75%{
+        background-image: url('../img/optimistic.jpg');
+        
+    }
+    100%{
+        background-image: url('../img/download-app-bg.jpg');
+        
+    }
+}
+
+
+
 .home::before{
     content:''; 
     position: absolute;
@@ -734,6 +766,10 @@ App Download Section
     text-align: center;
     color: #ffffff;
 }
+.app-download .section-title h3 {
+    margin-top: 120px;
+    color: #ffffff;
+}
 .app-download::before{
     content:''; 
     position: absolute;
@@ -790,9 +826,10 @@ How It Work Section
 .how-it-work{
     position: relative;
     background-image: url('../img/download-app-bg.jpg');
+    z-index: 1;
 }
 .how-it-work::before{
-    content:''; 
+    content:' '; 
     position: absolute;
     left: 0;
     top: 0;
@@ -1384,6 +1421,7 @@ Reponsive
 	transform: scale(.9);
 }
 .chatbox-message-wrapper {
+    z-index: 999999;
 	position: absolute;
 	bottom: calc(100% + 1rem);
 	right: 0;
@@ -1402,7 +1440,7 @@ Reponsive
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: var(--white);
+	background: var(--esm-main-color);
 	padding: .75rem 1.5rem;
 }
 .chatbox-message-profile {
@@ -1419,10 +1457,11 @@ Reponsive
 .chatbox-message-name {
 	font-size: 1.125rem;
 	font-weight: 600;
+    color: white;
 }
 .chatbox-message-status {
 	font-size: .875rem;
-	color: var(--grey-d-3);
+	color: white;
 }
 .chatbox-message-dropdown {
 	position: relative;
@@ -1470,7 +1509,8 @@ Reponsive
 	background: var(--grey);
 }
 .chatbox-message-content {
-	background: var(--grey);
+    z-index: 99999999999999;
+	background: white;
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
