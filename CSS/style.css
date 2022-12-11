@@ -111,6 +111,13 @@ ul{
     box-shadow: var(--shadow-black-300);
     font-weight: 500;
 }
+.btn-contact{
+    
+    
+    position:relative;
+    top:50%; 
+    left:15%
+}
 .btn-android{
     margin-top: 26px;
 }
@@ -367,7 +374,7 @@ Home Section
     min-height: 100vh;
     padding: 150px 0;
     /* background-color: var(--main-to-dark-color); */
-    background-image: url('../img/download-app-bg.jpg');
+    background-image: url('../img/shakehand.jpg');
     border-radius: 0 0 200px 0;
     position: relative;
     z-index: 1;
@@ -377,7 +384,7 @@ Home Section
 /* Slide carosel */
 @keyframes slideBg{
     0%{
-        background-image: url('../img/download-app-bg.jpg');
+        background-image: url('../img/shakehand.jpg');
         
     }
     25%{
@@ -393,7 +400,7 @@ Home Section
         
     }
     100%{
-        background-image: url('../img/download-app-bg.jpg');
+        background-image: url('../img/shakehand.jpg');
         
     }
 }
@@ -417,7 +424,11 @@ Home Section
     color: #ffffff;
     margin: 0 0 10px;
     text-align: center;
+    font-family: serif;
 }
+/* .home-text h1 span{
+    font-family: serif;
+} */
 .home-text h3 { 
     color: #ffffff; 
     font-weight: 500;
@@ -772,8 +783,9 @@ App Download Section
     color: #ffffff;
 }
 .app-download .section-title h3 {
-    margin-top: 120px;
-    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    color : #ffffff;
 }
 .app-download::before{
     content:''; 
