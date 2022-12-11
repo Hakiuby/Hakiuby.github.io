@@ -1263,6 +1263,12 @@ Reponsive
  -------------------*/
 
 @media(max-width: 991px){
+    .circle{
+
+    }
+    .btn-1{
+        margin-left: 150px;
+       }
     img{
         max-width: 100%;
         vertical-align: middle;
@@ -1321,6 +1327,18 @@ Reponsive
  }  
 
  @media(max-width: 767px){
+
+    
+    .circle{
+        visibility: hidden;
+    }
+   .navbar-logo img{
+    margin-left: -15px;
+    margin-bottom: 15px;
+   }
+   .btn-1{
+    margin-left: 100px;
+   }
     img{
         margin-left: 15px;
         max-width: 20%;
@@ -1372,6 +1390,7 @@ Reponsive
         font-size: 30px;
     }
 }
+
 /* .btn {
     display: inline-block;
     background: transparent;
