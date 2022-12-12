@@ -280,6 +280,12 @@ Preloader
 /* --------------
 Nav-Bar
 ------------------- */
+.logo-mobile{
+    visibility: hidden;
+    width: 10%;
+}
+
+
 .navbar{
     background-color:transparent; 
     padding: 20px 0;
@@ -1315,7 +1321,8 @@ Reponsive
      .app-download-item{
          margin-bottom: 30px;
      }
-     .how-it-work-item.line-right::before{
+     .how
+     -it-work-item.line-right::before{
          content: none;
      }
      .how-it-work-item{
@@ -1358,9 +1365,7 @@ Reponsive
         display: inline-block;
         float: right;
     }
-    .logo-mobile{
-        visibility: hidden;
-    }
+   
      .home-text{
          margin-bottom: 80px;
      }
@@ -1378,6 +1383,9 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .logo-mobile{
+        visibility: visible;
+    }
     .btn-contact{
         left: 27%;
     }
