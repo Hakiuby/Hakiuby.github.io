@@ -1358,6 +1358,9 @@ Reponsive
         display: inline-block;
         float: right;
     }
+    .logo-mobile{
+        visibility: hidden;
+    }
      .home-text{
          margin-bottom: 80px;
      }
@@ -1375,6 +1378,11 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .logo-mobile{
+        visibility: visible;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
     .btn-contact{
         left: 27%;
     }
