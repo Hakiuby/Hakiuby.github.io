@@ -218,7 +218,7 @@ ul{
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
-    margin: 0;
+    margin-top: 100px;
 }
 .section-title h2 span{
     color: var(--esm-main-color);
@@ -1384,6 +1384,9 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .section-title h2{
+        margin-top: 25px;
+    }
     .navbar-logo{
         visibility: hidden;
     }
