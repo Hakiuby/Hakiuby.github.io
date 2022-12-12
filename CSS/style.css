@@ -298,7 +298,7 @@ Nav-Bar
 .navbar-logo img{
     width: 45%;
     margin-left: -50px;
-    margin-top: -15px;
+    margin-top: 10px;
     margin-bottom: -10px;
 }
 .navbar.navbar-shrink{
