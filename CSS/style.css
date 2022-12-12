@@ -49,7 +49,7 @@ body{
 }
 body.dark{
     background-color: var(--bg-dark);
-    --black-100:var(--bg-dark); 
+    --black-100:var(-   -bg-dark); 
     --black-000:var(--bg-dark); 
     --main-to-dark-color: var(--bg-dark);
     --dark-to-main-color: var(--main-color) ; 
@@ -281,7 +281,7 @@ Preloader
 Nav-Bar
 ------------------- */
 .logo-mobile{
-    visibility: hidden;
+    visibility: hidden ;
     width: 10%;
 }
 
@@ -1289,6 +1289,7 @@ Reponsive
         float: right;
         font-size: 17px;
         color: #ffffff;
+        margin-right: 20px;
     }
     .navbar-nav{
         background-color: var(--dark-to-main-color);
@@ -1383,8 +1384,13 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .navbar-logo{
+        visibility: hidden;
+    }
     .logo-mobile{
         visibility: visible;
+        width: 80%;
+        margin-top: 5px;
     }
     .btn-contact{
         left: 27%;
