@@ -112,8 +112,6 @@ ul{
     font-weight: 500;
 }
 .btn-contact{
-    
-    
     position:relative;
     top:50%; 
     left:15%
@@ -1257,6 +1255,9 @@ Toggle theme light and dark mode
     line-height: 40px;
    ;
 }
+.more{
+    visibility: hidden;
+}
 
 /*-------------------
 Reponsive
@@ -1333,7 +1334,7 @@ Reponsive
         visibility: hidden;
     }
    .navbar-logo img{
-    margin-left: -15px;
+    margin-left: -5px;
     margin-bottom: 15px;
    }
    .btn-1{
@@ -1374,6 +1375,9 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .btn-contact{
+        left: 27%;
+    }
     .btn-3{
         font-size: 12px;
     }
