@@ -270,6 +270,16 @@ Preloader
 /* --------------
 Nav-Bar
 ------------------- */
+.logo-mobile{ 
+    visibility: hidden;
+    width: 10%;
+}
+.navbar-logo img{ 
+    width: 45%;
+    margin-left: -50px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
 .navbar{
     background-color:var(--navbar-background); 
     padding: 20px 0;
@@ -277,7 +287,7 @@ Nav-Bar
 }
 .navbar.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--main-color);
+    background-color: #555555;
     padding: 10px 0;
 }
 
@@ -1242,6 +1252,11 @@ Reponsive
  @media(max-width: 767px){
     input.form__field{
         width: 330px;
+    }
+    img{
+        margin-left: 15px;
+        max-width: 20%;
+        vertical-align: middle;
     }
     .navbar .navbar-brand img {
         max-width: 20%;
