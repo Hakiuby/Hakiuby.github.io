@@ -314,10 +314,10 @@ Nav-Bar
     padding: 20px 0;
     transition: all 0.5s ease;
 }
-.navbar-logo{
-    text-align: left;
-    margin-top: -20px;
-}
+    .navbar-logo{
+        text-align: left;
+        margin-top: -20px;
+    }
 .navbar-logo img{
     width: 45%;
     margin-left: -50px;
@@ -356,13 +356,13 @@ Nav-Bar
 }
 .navbar .nav-item:hover ul.dropdown{
     z-index: 9999;
-    background-color: #e86b0c;
+    background-color: var(--bg-dark);
     padding:2px;
     width:auto;
     visibility: visible;
     display: block;
     position:absolute;
-    border-radius: 20% 0 20%;
+    border-radius: 15px;
 }
 .navbar .nav-item .nav-link{
     color: var(--navbar-text);

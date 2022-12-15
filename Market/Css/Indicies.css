@@ -270,6 +270,20 @@ Preloader
 /* --------------
 Nav-Bar
 ------------------- */
+.logo-mobile{
+    visibility: hidden;
+    width: 10%;
+}
+.navbar-logo{
+    text-align: left;
+    margin-top: auto;
+}
+.navbar-logo img{ 
+    width: 45%;
+    margin-left: -50px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
 .navbar{
     /* background-color:var(--navbar-background);  */
     background-color: var(--bg-dark);
@@ -278,7 +292,7 @@ Nav-Bar
 }
 .navbar.navbar-shrink{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--main-color);
+    background-color: #555555; 
     padding: 10px 0;
 }
 
@@ -308,13 +322,13 @@ Nav-Bar
 }
 .navbar .nav-item:hover ul.dropdown{
     z-index: 9999;
-    background-color: #e86b0c;
+    background-color: var(--bg-dark);
     padding:2px;
     width:auto;
     visibility: visible;
     display: block;
     position:absolute;
-    border-radius: 20% 0 20%;
+    border-radius: 15px;
 }
 .navbar .nav-item .nav-link{
     color: var(--navbar-text);
@@ -1291,6 +1305,10 @@ Reponsive
  -------------------*/
 
 @media(max-width: 991px){
+    img{
+        max-width: 100%; 
+        vertical-align: middle;
+    }
     .navbar-toggler{
         background-color: var(--dark-to-main-color);
         box-shadow: var(--shadow-black-300);
@@ -1302,7 +1320,7 @@ Reponsive
         color: #ffffff;
     }
     .navbar-nav{
-        background-color: var(--dark-to-main-color);
+        background-color: #2c2b2f;
         box-shadow: var(--shadow-black-300);
     }
     .navbar .nav-item{
@@ -1311,7 +1329,7 @@ Reponsive
     }
     .navbar.navbar-shrink .navbar-toggler,
     .navbar.navbar.navbar-shrink .navbar-nav{
-        background-color: var(--main-color);
+        background-color: var(--black-400);
      }
     
      .home-img .circle{
@@ -1345,6 +1363,11 @@ Reponsive
  }  
 
  @media(max-width: 767px){
+    img{
+        margin-left: 15px;
+        max-width: 20%;
+        vertical-align: middle;
+    }
     input.form__field{
         width: 330px;
     }
@@ -1375,6 +1398,15 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .navbar-logo{
+        visibility: hidden;
+        width: 15%;
+    }
+    .logo-mobile{
+        visibility: visible;
+        width: 80%;
+        margin-top: 5px;
+    }
     .btn-3{
         font-size: 12px;
     }

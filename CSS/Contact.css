@@ -1285,6 +1285,14 @@ Reponsive
      }
  }
  @media(max-width: 575px){
+    .navbar-logo{
+        visibility: hidden;
+    }
+    .logo-mobile{
+        visibility: visible;
+        width: 80%;
+        margin-top: 5px;
+    }
     .btn-3{
         font-size: 12px;
     }
