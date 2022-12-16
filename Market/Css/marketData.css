@@ -302,7 +302,7 @@ Nav-Bar
     position: absolute;
     
 }
-.navbar .nav-item .dropdown .nav-item-drop{
+.navbar .nav-item .dropdown .nav-item-drop{ 
     margin-left: 25px;
     margin-right: 25px;
 }
