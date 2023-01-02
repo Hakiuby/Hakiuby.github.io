@@ -609,7 +609,6 @@ Video Popup
     z-index: 1;
     overflow: hidden;
     height: 350px;
-    
 }
 .features .feature-item::before,
 .features .feature-item::after{
@@ -1661,4 +1660,7 @@ Reponsive
 		bottom: 1rem;
 		right: 1rem;
 	}
+}
+.home-feature{
+    background-color: red];
 }
