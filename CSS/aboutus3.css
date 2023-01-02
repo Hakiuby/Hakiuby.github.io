@@ -227,6 +227,7 @@ ul{
     font-size: 40px;
     color: var(--esm-main-color);
 }
+
 .owl-carousel .owl-dots{
     padding: 0 15px;
     text-align: center;
@@ -609,6 +610,7 @@ Video Popup
     z-index: 1;
     overflow: hidden;
     height: 350px;
+    background-color: white;
 }
 .features .feature-item::before,
 .features .feature-item::after{
